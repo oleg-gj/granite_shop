@@ -1,5 +1,5 @@
 from django.contrib import admin
-from shop.models import Category, GraniteProduct
+from shop.models import Category, Product
 
 admin.site.register(Category)
-admin.site.register(GraniteProduct)
+admin.site.register(Product)

@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% if category_list %}
+<table class="table">
+  <thead>
+  <tr>
+    <th scope="col"><h5>ID</h5></th>
+    <th scope="col"><h5>Name</h5></th>
+  </tr>
+  </thead>
+
+  {% for category in category_list %}
+  <tr>
+    <th scope="row">
+      {{ category.id }}
+    </th>
+    <th scope="row">
+      {{ category.name }}
+
+    </th>
+    {% endfor %}
+</table>
+
+{% else %}
+<p>There are no dishes in the service.</p>
+{% endif %}
+{% endblock %}
