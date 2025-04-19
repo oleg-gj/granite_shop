@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+{% block navbar %}
+{% include "includes/navbar.html" %}
+{% endblock %}
+
+{% block page_description %}
+<h1>Магазин граніту</h1>
+<p class="lead text-white mt-3">Найкращий магазин якісних продуктів <br/>
+  Ми допоможемо знайти для вас щось особливе
+</p>
+{% endblock %}
+
+{% block content %}{% endblock %}
+
+
+</body>
+</html>

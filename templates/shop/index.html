@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+<h1>{{ num_visits }}</h1>
+<h5 >Time{{ num_visits|pluralize }}</h5>
+<p>Ви відвідали цю сторінку</p>
+
+<hr>
+
+
+<h1>{{ num_categories}}</h1>
+<h5>Категорій</h5>
+<p>В магазині зараз доступно</p>
+
+<hr>
+
+
+<h1>{{ num_granite_products}}</h1>
+<h5>Виробів</h5>
+<p>Загальна к-ть виробів в магазині</p>
+
+{% endblock %}
